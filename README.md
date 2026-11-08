@@ -4,7 +4,7 @@
 > This repository contains the source code and process explanation for building the SpiderCat jailbreak book.
 > If you're looking for instructions on how to actually perform the jailbreak, go to [KindleModding](https://kindlemodding.org/jailbreaking/SpiderCat/)!
 
-`build.py` builds `spidercat.azw3`, a fixed-layout Kindle book that, when opened, runs a shell command (by default, executing `jb.sh` Kindle jailbreak) via a `JSArray::sort` use-after-free in webreader's WebKit.
+`build.py` builds `spidercat.azw3`, a fixed-layout Kindle book that, when opened, runs a shell command (by default, executing [`jb.sh`](https://github.com/KindleModding/jb.sh) Kindle jailbreak) via a `JSArray::sort` use-after-free in webreader's WebKit.
 
 Supported firmware: Kindle OS **5.16.3 through 5.19.5** (hard-float builds).
 5.19.6 and later patched the entry point by sandboxing the webreader iframe.
